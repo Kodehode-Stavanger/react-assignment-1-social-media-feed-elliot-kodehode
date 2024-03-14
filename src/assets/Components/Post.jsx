@@ -1,22 +1,16 @@
-import posts from "../posts.js"
 import "./Post.css"
+// import posts from "../posts.js";
 
-// let post;
-// {username, content, timestamp, likes} = post;
-function post() {
+export default function Post({username, content, likes, timestamp}) {
     return (
-posts.map(({username, content, timestamp, likes}, index) =>
-    <div className="post-container" key={index}>
+    <div className="post-container">
         <h3 className="user">{username}</h3>
         <p className="content">{content}</p>
         <div className="likes-container">
-            <img src="src/assets/licon-but-better.png" alt="thumbs up icon" className="likes-icon"/>
+            <img src="../../../../new-react-try/src/assets/licon-but-better.png" alt="thumbs up icon" className="likes-icon"/>
             <p className="likes">{likes}</p>
         </div>
         <p className="timestamp">{timestamp}</p>
     </div>
-)
     )
 }
-
-export default post

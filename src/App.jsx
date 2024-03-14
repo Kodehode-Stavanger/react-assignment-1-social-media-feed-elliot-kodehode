@@ -1,7 +1,6 @@
-import Feed from "./assets/Components/Feed.jsx"
+import Feed from "./assets/Components/Feed.jsx";
 function App() {
-   return ( <Feed></Feed>
+   return ( <Feed />
    )
 }
-
 export default App;

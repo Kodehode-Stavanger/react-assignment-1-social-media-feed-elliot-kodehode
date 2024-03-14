@@ -1,10 +1,15 @@
-import Post from "./Post.jsx"
-import "./Feed.css"
+import posts from "../posts.js";
+import Post from "./Post.jsx";
+import "./Feed.css";
 
-function feed(){
+export default function Feed(){
     return (
-    <div className="feed">
-        <Post></Post>
-    </div>)
+        <div className="feed">
+            {posts.map((post, index) => (
+        <Post key={index} username={post.username} content={post.content} likes={post.likes} timestamp={post.timestamp}
+        />))
+    }
+        </div>
+    );
 }
-export default feed
+
