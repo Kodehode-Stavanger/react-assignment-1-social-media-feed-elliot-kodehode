@@ -1,5 +1,6 @@
 import "./Post.css"
 // import posts from "../posts.js";
+import likeIcon from "../licon-but-better.png"
 
 export default function Post({username, content, likes, timestamp}) {
     return (
@@ -7,7 +8,7 @@ export default function Post({username, content, likes, timestamp}) {
         <h3 className="user">{username}</h3>
         <p className="content">{content}</p>
         <div className="likes-container">
-            <img src="../../../../new-react-try/src/assets/licon-but-better.png" alt="thumbs up icon" className="likes-icon"/>
+            <img src={likeIcon} alt="thumbs up icon" className="likes-icon"/>
             <p className="likes">{likes}</p>
         </div>
         <p className="timestamp">{timestamp}</p>
