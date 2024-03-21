@@ -1,5 +1,12 @@
-import Feed from "./assets/Components/Feed.jsx";
+import { useState } from 'react'
+import './App.css'
+import Page from "./Component/Page.jsx";
 function App() {
-   return <Feed></Feed>
+  console.log()
+  return (
+      <Page/>
+
+  )
 }
-export default App;
+
+export default App
